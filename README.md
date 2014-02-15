@@ -18,7 +18,7 @@ print result.tag
 
 Visit the website at: 
 
-[Live demo](http://littleparser.herokuapp.com/)
+[Live demo](http://thelittleparser.herokuapp.com/)
 
 
 == Copyright
