@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "lib/grocery_list_formatter.rb",
     "lib/little-recipe-parser.rb",
     "lib/parse.rb",
+    "little-recipe-parser.gemspec",
     "test/helper.rb",
     "test/test_grocery_list_formatter.rb",
     "test/test_parse.rb"
