@@ -6,7 +6,7 @@
 
 ## Usage
 
-### gem install 'litte-recipe-parser'
+### gem install 'little-recipe-parser'
 
 ```ruby
 result = LittleRecipeParser::Parse.new('1 pound of tomatoes')
