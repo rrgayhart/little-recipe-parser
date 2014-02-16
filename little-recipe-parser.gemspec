@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Meeka"]
-  s.date = "2014-02-15"
-  s.description = "Recipe Parsing Gem - Simply run LittleRecipeParser::Parse.new('1 pound of chicken') - you can then call .quantity, .tag or .measurement on the string"
+  s.date = "2014-02-16"
+  s.description = "Recipe Parsing Gem - Simply run result = LittleRecipeParser::Parse.new('1 pound of chicken') - you can then call result.quantity, result.tag or result.measurement on the string"
   s.email = "rrgayhart@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
