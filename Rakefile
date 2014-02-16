@@ -19,8 +19,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = "Recipe Parsing Gem"
   gem.description = "Recipe Parsing Gem - Simply run result = LittleRecipeParser::Parse.new('1 pound of chicken') - you can then call result.quantity, result.tag or result.measurement on the string"
-  gem.email = "rrgayhart@gmail.com"
-  gem.authors = ["Meeka"]
+  gem.email = ["rrgayhart@gmail.com", "navyosu@gmail.com"]
+  gem.authors = ["Meeka Gayhart", "Billy Griffin"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

@@ -15,6 +15,7 @@ class GroceryListFormatterTest < Test::Unit::TestCase
     assert_equal "Fresh Ginger", check_name('1-inch (3cm) piece fresh ginger, peeled and minced')
     assert_equal "Powdered Ginger", check_name('1-inch tsp powdered ginger')
     assert_equal "Tofu", check_name("1 (12 ounce) package soft tofu, drained and cut into 1/2-inch cubes")
+    assert_equal "Banana", check_name("2 cup bananas")
   end
 
   should "it handles odd pluralization" do

@@ -3,13 +3,17 @@ class LittleRecipeParser::Parse
 
   def initialize(string)
     @raw_ingredient = string
-    @tag = LittleRecipeParser::GroceryListFormatter.check_name(raw_ingredient)
+    @tag = get_tag
     @measurement = get_measurement
     @quantity = get_quantity
   end
 
   def persisted?
     false
+  end
+
+  def get_tag
+    LittleRecipeParser::GroceryListFormatter.check_name(raw_ingredient)
   end
 
   def get_quantity
@@ -29,7 +33,7 @@ class LittleRecipeParser::Parse
 
   def get_measurement
     measurements = acceptable_measurements.select do |measure|
-      raw_ingredient.downcase.include?(measure.downcase)
+      raw_ingredient[0..20].downcase.include?(measure.downcase)
     end
     if measurements.any?
       answer = measurements.first.strip
@@ -40,7 +44,7 @@ class LittleRecipeParser::Parse
 
   def check_secondary_measurements
     secondary_measurements.select do |measure|
-      raw_ingredient.downcase.include?(measure.downcase)
+      raw_ingredient[0..20].downcase.include?(measure.downcase)
     end.first.try(:strip)
   end
 
@@ -51,7 +55,7 @@ class LittleRecipeParser::Parse
   end
 
   def secondary_measurements
-    ['strip', 'strips', 'package', 'can ', 'cans', 'bunch ', 'bunches']
+    ['strip', 'strips', 'package', 'can ', 'cans', 'bunch ', 'bunches', 'slice', 'slices', 'cube', 'cubes']
   end
 
 end
