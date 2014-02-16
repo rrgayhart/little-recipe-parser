@@ -6,6 +6,8 @@
 
 ## Usage
 
+### gem install 'litte-recipe-parser'
+
 ```ruby
 result = LittleRecipeParser::Parse.new('1 pound of tomatoes')
 print result.quantity
