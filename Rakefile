@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/rrgayhart/little-recipe-parser"
   gem.license = "MIT"
   gem.summary = "Recipe Parsing Gem"
-  gem.description = "Recipe Parsing Gem - Simply run LittleRecipeParser::Parse.new('1 pound of chicken') - you can then call .quantity, .tag or .measurement on the string"
+  gem.description = "Recipe Parsing Gem - Simply run result = LittleRecipeParser::Parse.new('1 pound of chicken') - you can then call result.quantity, result.tag or result.measurement on the string"
   gem.email = "rrgayhart@gmail.com"
   gem.authors = ["Meeka"]
   # dependencies defined in Gemfile
