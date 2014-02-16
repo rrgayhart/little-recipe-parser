@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = "little-recipe-parser"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Meeka"]
+  s.authors = ["Meeka Gayhart", "Billy Griffin"]
   s.date = "2014-02-16"
   s.description = "Recipe Parsing Gem - Simply run result = LittleRecipeParser::Parse.new('1 pound of chicken') - you can then call result.quantity, result.tag or result.measurement on the string"
-  s.email = "rrgayhart@gmail.com"
+  s.email = ["rrgayhart@gmail.com", "navyosu@gmail.com"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
